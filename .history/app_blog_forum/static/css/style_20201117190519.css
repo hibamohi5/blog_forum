@@ -1,0 +1,28 @@
+.register_form{
+    display:flex;
+    background-color:blue;
+    margin-left: 200px;
+    padding-left:0px;
+    height:300px;
+    width:650px;
+    border-style: solid;
+    height:444px;
+    width:333px;
+}
+
+
+
+* {
+    box-sizing:border-box;
+}
+
+.wrapper {
+    display:flex;
+}
+
+.main {
+    display:flex;
+    height:1000px;
+    width:100%;
+    background-color: grey;
+}

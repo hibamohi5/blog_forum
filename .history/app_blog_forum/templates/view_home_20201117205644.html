@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <script src="{% static 'js/script.js' %}"></script>
+
+        <div class="header">
+            <h1>header</h1>
+            <p>hello, {{user.first_name}}</p>
+            <br/>
+            <p>P</p>
+        </div>
+    </head>
+
+    <body>
+        <p>hahahah</p>
+        <a href="/logout">logout</a>
+    </body>
+</html>

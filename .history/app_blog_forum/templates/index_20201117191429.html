@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <script src="{% static 'js/script.js' %}"></script>
+
+        <h1>Header</h1>
+        <div class="header">
+            <h1>Header</h1>
+
+        </div>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="main">
+                <div class="register_form">
+                    {% if messages %}
+                        Errors:
+                        <ul class="messages">
+                            {% for message in messages %}
+                                <li {% if message.tags %} class="{{message.tags}}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    <h1>Registration</h1>
+                    <form action="/register" method="post">
+                        {% csrf_token %}
+
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" />
+                        <br/>
+
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name"/>
+                        <br/>
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email"/>
+                        <br/>
+                    
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password"/>
+                        <br/>
+
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password"/>
+                        <br/>
+                
+                        <button type="submit">Register</button>
+                        <br/>
+                
+                    </form>
+
+                </div>
+                <div class="login_wasteland">
+                    <h1>Login</h1>
+                    <form action="/login" method="post">
+                        {% csrf_token %}
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email"/>
+                        <br>
+                    
+                        <label for="password">Password</label>
+                        <input type="password"name="password"/>
+                        <br>
+
+                        <button type="submit">Log in</button>
+                        <br>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

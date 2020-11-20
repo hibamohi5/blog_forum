@@ -1,0 +1,82 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.image{
+    height: auto;
+    width: auto;
+}
+
+/* .container{
+    background: rgb(225,230,233);
+    background: linear-gradient(59deg, rgba(225,230,233,1) 0%, rgba(23,162,184,1) 93%);
+} */
+
+    /* .register_form{
+    display: inline-block; */
+    /* display:flex; */
+    /* background-color:blue;
+    margin-left: 200px;
+    padding-left:0px;
+    height:300px;
+    width:650px;
+    border-style: solid;
+    font-family: sans-serif ; */
+/* } */
+
+
+
+/* * {
+    box-sizing:border-box;
+} */
+
+/* .wrapper {
+    display:flex;
+} */
+
+/* .main {
+    display:flex;
+    height:1000px;
+    width:100%;
+    background-color: grey;
+} */
+
+/* .login_wasteland{
+    /* display:flex; */
+    /* display: inline-block;
+    height:300px;
+    width:650px;
+    background-color:green;
+    display: inline-block;
+} */ 
+
+/* .header {
+    display:flex;
+    height:111px;
+    width:100%;
+    background-color: burlywood;
+    font-family: "Comic Sans MS";
+    font-weight: 2500;
+} */
+
+/* .buttons{
+    width: 80px;
+    height: 30px;
+    background-color:#7dcfda ;
+    border-radius: 7px;
+    color: white;
+    vertical-align: left;
+    padding: 5px ;
+    vertical-align: left ;
+    
+}  */
+
+/* .article{
+    background-color: #0E1822;
+    padding: 20px;
+    border-radius: 10px;
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    } */

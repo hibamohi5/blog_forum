@@ -1,0 +1,9 @@
+.register_form{
+    display:flex;
+    color:blue;
+    margin-left: 200px;
+    padding-left:0px;
+    height:300px;
+    width:650px;
+    border-style: solid;
+}

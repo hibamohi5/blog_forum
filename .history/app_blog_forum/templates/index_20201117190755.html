@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <script src="{% static 'js/script.js' %}"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="main">
+                <div class="register_form">
+                    {% if messages %}
+                    Errors:
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <li {% if message.tags %} class="{{message.tags}}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body class="container">
+    <header>
+        <!-- <div class="container"> -->
+        <div class="col border border-info shadow p-3 mr-2 mb-2">
+
+            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+
+
+                <a class="mr-3" href="/articles">Articles</a>
+
+                <a class="mr-3" href="projects">Projects</a>
+
+                <a class="mr-3" href="aboutme">About Me</a>
+
+                <a class="mr-3" href="/">Register</a>
+
+                <a class="mr-3" href="/login">Login</a>
+
+                <a class="mr-3" href="/logout">Logout</a>
+        </div>
+        </nav>
+        <!-- </div> -->
+    </header>
+    <div class="col border border-info shadow p-3 mr-2 mb-2">
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <h1>Hello, {{user.first_name}}</h1>
+        </div>
+        <div class="image">
+            <img src="../../static/img/blog_pic_editedd.jpg" alt="no-image-available">
+        </div>
+        <!-- <div class="d-flex flex-row-reverse bd-highlight">
+            <h2 class="h-100 d-inline-block" style="width: auto p-3;">
+                <p class="font-weight-normal">I'm the crash test dummy
+                    <br>
+                    of online business,
+                    sharing what <br>
+                    works (and
+                    what
+                    doesn't)
+                    <br>
+                    so you know exactly
+                    how to
+                    <br>
+                    build your business better.</p>
+            </h2>
+        </div> -->
+        <div class="text-left">
+            <!-- <a href="/logout">Logout</a> -->
+            <a class="btn btn-info" href="/logout" role="button">Logout</a>
+        </div>
+    </div>
+</body>
+
+</html>
